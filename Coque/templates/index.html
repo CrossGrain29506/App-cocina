@@ -1,0 +1,28 @@
+{%extends 'nav.html'%}
+{%block content%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="bg-gray-200 h-full">
+        <h1 class="items-center justify-center m-auto flex pt-24 font-bold">Recetas del mundo para ti</h1>
+        <div class="grid grid-rows-2 grid-flow-col gap-52 justify-center items-center my-32">
+            <div class=""><img src="{%static 'España.jpg'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">España</h1><img src="{%static 'Paella.jpg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+            <div class=""><img src="{%static 'Mexico.jpg'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">Mexico</h1><img src="{%static 'Pozole.jpg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+            <div class=""><img src="{%static 'Francia.png'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">Francia</h1><img src="{%static 'rata.jpeg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+            <div class=""><img src="{%static 'Italia.jpg'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">Italia</h1><img src="{%static 'Pizza.jpg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+            <div class=""><img src="{%static 'Australia.png'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">Australia</h1><img src="{%static 'Vege.jpg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+            <div class=""><img src="{%static 'Japon.jpg'%}"class="mx-6 w-10 h-15"><h1 class="mx-4">Japon</h1><img src="{%static 'Ramen.jpg'%}" alt="" class="w-24 h-24"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Mas</h1></button></div>
+        </div>
+    </div>
+</body>
+</html>
+{%include 'footer.html'%}
+{%endblock%}
