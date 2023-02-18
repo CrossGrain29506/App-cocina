@@ -20,8 +20,5 @@ from Coque import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.hello),
-    path('login/', views.login),
-    path('reg/', views.reg),
-    
-
+    path('login/', views.login)
 ]

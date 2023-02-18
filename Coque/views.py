@@ -7,7 +7,4 @@ def hello(request):
  return render(request,'./index.html')
 
 def login(request):
-  return render(request,'./login.html')
-  
-def reg(request):
-  return render(request,'./reg.html')
+  return render(request,'./login.html') 
