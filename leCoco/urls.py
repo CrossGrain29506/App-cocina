@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Coque import views
+from django import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.hello),
-    path('login/', views.login)
+    path('index/', views.hello),
+    path('login/', views.login),
+    path('reg/',views.reg)
 ]
