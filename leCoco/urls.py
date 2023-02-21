@@ -23,5 +23,12 @@ urlpatterns = [
     path('', views.hello),
     path('index/', views.hello),
     path('login/', views.login),
-    path('reg/',views.reg)
+    path('reg/',views.reg),
+    path('AusF/',views.AusF),
+    path('FranF/',views.FranF),
+    path('ItaliaF/',views.ItaliaF),
+    path('JaponF',views.JaponF),
+    path('MexF/',views.MexF),
+    path('SpainF/',views.SpainF)
+
 ]
