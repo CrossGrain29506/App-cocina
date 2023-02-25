@@ -1,3 +1,6 @@
+{%extends 'nav.html'%}
+{%block content%}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +18,14 @@
     <!-- Section: Design Block -->
     <section class="mb-32 text-gray-800 text-center md:text-left">
   
-      <h2 class="text-3xl font-bold mb-12 text-center">GAZPACHO SERRANO con queso</h2>
+      <h2 class="text-3xl font-bold mb-12 text-center">Crepes bretones</h2>
   
       <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
         <div class="mb-6 md:mb-0">
           <div
             class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
             data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="coco.jpg"
+            <img src="{%static 'Crepe.jpg'%}"
               class="w-full" alt="Louvre" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
@@ -32,7 +35,7 @@
         </div>
   
         <div class="mb-6 md:mb-0">
-          <h3 class="text-2xl font-bold mb-3">GAZPACHO DE CERDO</h3>
+          <h3 class="text-2xl font-bold mb-3">Crepa</h3>
           <!-- AUTOR DE LA RECETA -->
           <!-- <p class="text-gray-500 mb-6">
             <small>Published <u>13.01.2022</u> by
@@ -53,9 +56,8 @@
     </section>
     
   
-  </div>
-
-     
+  </div>     
 </body>
-
 </html>
+{%include 'footer.html'%}
+{%endblock%}

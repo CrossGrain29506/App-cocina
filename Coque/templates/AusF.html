@@ -1,3 +1,7 @@
+{%extends 'nav.html'%}
+{%block content%}
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +16,11 @@
         <h1 class="items-left justify-left px-10 pb-10 m-auto flex pt-24 font-bold">Australia</h1>
         <h1 class="items-center justify-center px-10 pb-10 m-auto flex pt-24 font-bold">Recetas de platillos tipicos</h1>
         <div class="grid grid-rows-1 grid-flow-col gap-52 justify-center items-center my-32">
-            <div class=""><h1 class="mx-4">Vegemite</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
-            <div class=""><h1 class="mx-4">Filete de atún a la parrilla</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
-            <div class=""><h1 class="mx-4">Borrego asado</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Filete de atún a la parrilla</h1><img src="{%static 'Atun.jpg'%}" alt="" class="w-24 h-24"><a href="../RecetaAP"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Borrego asado</h1><img src="{%static 'Borrego.jpg'%}" alt="" class="w-24 h-24"><a href="../RecetaBA"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Balmain Bug</h1><img src="{%static 'BB.jpg'%}" alt="" class="w-24 h-24"><a href="../RecetaBB"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
         </div>
 </body>
 </html>
+{%include 'footer.html'%}
+{%endblock%}

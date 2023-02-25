@@ -1,3 +1,6 @@
+{%extends 'nav.html'%}
+{%block content%}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +12,14 @@
 </head>
 <body>
     <div class="bg-gray-200 h-full">
-        <h1 class="items-left justify-left px-10 pb-10 m-auto flex pt-24 font-bold">ESPANIA</h1>
+        <h1 class="items-left justify-left px-10 pb-10 m-auto flex pt-24 font-bold">Francia</h1>
         <h1 class="items-center justify-center px-10 pb-10 m-auto flex pt-24 font-bold">Recetas de platillos tipicos</h1>
         <div class="grid grid-rows-1 grid-flow-col gap-52 justify-center items-center my-32">
-            <div class=""><h1 class="mx-4">RATATOUILLE</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
-            <div class=""><h1 class="mx-4">Pollo a la Vasca</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
-            <div class=""><h1 class="mx-4">Crepes bretones</h1><img src="coco.jpg" alt="" class="w-24 h-24"><a href="detail.html"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Ratatouille</h1><img src="{%static 'reta.jpg'%}" alt="" class="w-24 h-24"><a href="../RecetaRAT"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Pollo a la Vasca</h1><img src="{%static 'PolloV.png'%}" alt="" class="w-24 h-24"><a href="../RecetaPV"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
+            <div class=""><h1 class="mx-4">Crepes bretones</h1><img src="{%static 'crepe.jpg'%}" alt="" class="w-24 h-24"><a href="../RecetaCB"><button><h1 class="m-3 bg-cyan-500 p-2 rounded-xl">Ver Receta</h1></button></a></div>
         </div>
 </body>
 </html>
+{%include 'footer.html'%}
+{%endblock%}
