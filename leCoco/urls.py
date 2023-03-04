@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include 
 from Coque import views
 from django import urls
 
@@ -29,6 +29,32 @@ urlpatterns = [
     path('ItaliaF/',views.ItaliaF),
     path('JaponF',views.JaponF),
     path('MexF/',views.MexF),
-    path('SpainF/',views.SpainF)
+    path('SpainF/',views.SpainF),
+
+    path('RecetaTE/',views.RecetaTE),
+    path('RecetaG/',views.RecetaG),
+    path('RecetaCO/',views.RecetaCO),
+
+    path('RecetaAP/',views.RecetaAP),
+    path('RecetaBA/',views.RecetaBA),
+    path('RecetaBB/',views.RecetaBB),
+
+    path('RecetaRAT/',views.RecetaRAT),
+    path('RecetaPV/',views.RecetaPV),
+    path('RecetaCB/',views.RecetaCB),
+
+    path('RecetaPIM/',views.RecetaPIM),
+    path('RecetaRM/',views.RecetaRM),
+    path('RecetaSC/',views.RecetaSC),
+
+    path('RecetaSUS/',views.RecetaSUS),
+    path('RecetaTEMP/',views.RecetaTEMP),
+    path('RecetaON/',views.RecetaON),
+
+    path('RecetaCP/',views.RecetaCP),
+    path('RecetaPOZ/',views.RecetaPOZ),
+    path('RecetaMO/',views.RecetaMO),
+
+    path('accounts/', include('allauth.urls')),
 
 ]
